@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-zetkin",
   "version": "0.1.0",
   "description": "",
   "keywords": [
@@ -9,11 +9,11 @@
   "homepage": "",
   "author": {
     "name": "",
-    "email": ""
+    "email": "joe@tippingpointuk.org"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/tippingpointuk/n8n-nodes-zetkin.git"
   },
   "main": "index.js",
   "scripts": {
@@ -31,11 +31,13 @@
     "n8nNodesApiVersion": 1,
     "credentials": [
       "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/HttpBinApi.credentials.js",
+      "dist/credentials/ZetkinOAuth2Api.credentials.js"
     ],
     "nodes": [
       "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/HttpBin/HttpBin.node.js",
+      "dist/nodes/Zetkin/Zetkin.node.js"
     ]
   },
   "devDependencies": {
