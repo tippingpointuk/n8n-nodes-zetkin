@@ -20,7 +20,7 @@ export class ZetkinOAuth2Api implements ICredentialType {
 			displayName: 'Authorization URL',
 			name: 'authUrl',
 			type: 'hidden',
-			default: 'https://login.dev.zetkin.org',
+			default: 'http://login.dev.zetkin.org/login',
 		},
 		{
 			displayName: 'Access Token URL',

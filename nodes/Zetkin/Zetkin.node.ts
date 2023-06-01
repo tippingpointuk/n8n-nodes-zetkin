@@ -17,7 +17,12 @@ export class Zetkin implements INodeType {
 			}
 		],
 		requestDefaults: {
-			baseURL: 'https://app.dev.zetkin.org/api/'
+			baseURL: 'https://app.dev.zetkin.org',
+			url: '/api',
+			headers: {
+				Accept: 'application/json',
+				'Content-Type': 'application/json',
+			},
 		},
 		inputs: ['main'],
 		outputs: ['main'],
@@ -32,9 +37,39 @@ export class Zetkin implements INodeType {
 						name: 'Organization',
 						value: 'organization',
 					},
+					{
+						name: 'User',
+						value: 'user',
+					}
 				],
 				default: 'organization',
 			},
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+
+				displayOptions: {
+					show: {
+						resource: ['organization'],
+					},
+				},
+				options: [
+					{
+						name: 'GET',
+						value: 'get',
+						action: 'Perform a GET request',
+						routing: {
+							request: {
+								method: 'GET',
+								url: '/orgs',
+							},
+						},
+					}
+				],
+				default: 'get'
+			}
 		],
 
 	}
