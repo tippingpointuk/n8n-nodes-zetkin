@@ -20,6 +20,8 @@ member journeys.
 
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
+To setup credentials, you have to copy and paste the 'state' string that is sent to the zetkin login page to the callback url (as well as 'code').
+
 ## Operations
 
 This node is in early stages. Currently not supporting any operations.

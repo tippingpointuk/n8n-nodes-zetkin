@@ -19,26 +19,39 @@ export class ZetkinOAuth2Api implements ICredentialType {
 		{
 			displayName: 'Authorization URL',
 			name: 'authUrl',
-			type: 'hidden',
-			default: 'http://login.dev.zetkin.org/login',
+			type: 'string',
+			default: 'http://api.dev.zetkin.org/v1/oauth/authorize',
 		},
 		{
 			displayName: 'Access Token URL',
 			name: 'accessTokenUrl',
-			type: 'hidden',
+			type: 'string',
 			default: '',
 		},
-		{
-			displayName: 'Auth URI Query Parameters',
-			name: 'authQueryParameters',
-			type: 'hidden',
-			default: '',
-		},
+		// {
+		// 	displayName: 'Auth URI Query Parameters',
+		// 	name: 'authQueryParameters',
+		// 	type: 'string',
+		// 	default: 'scope=level2',
+		// },
 		{
 			displayName: 'Authentication',
 			name: 'authentication',
-			type: 'hidden',
+			type: 'string',
 			default: 'body',
 		},
+		{
+			displayName: 'Scope',
+			name: 'scope',
+			type: 'string',
+			default: 'level2'
+		},
+		{
+			displayName: 'Ignore SSL Issues',
+			name: 'ignoreSSLIssues',
+			type: 'boolean',
+			default: false,
+			doNotInherit: true,
+		}
 	];
 }
