@@ -20,7 +20,6 @@ member journeys.
 
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
-To setup credentials, you have to copy and paste the 'state' string that is sent to the zetkin login page to the callback url (as well as 'code').
 
 ## Operations
 
@@ -33,6 +32,8 @@ Zetkin uses oAuth. In order to set up on your n8n instance you will need:
 * Client Secret
 * Client ID
 * API Key
+
+**To setup credentials once you have these, you have to copy and paste the 'state' string that is sent to the zetkin login page to the callback url (as well as 'code').**
 
 ## Compatibility
 
